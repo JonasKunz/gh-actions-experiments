@@ -9,4 +9,6 @@ jobs:
       - id: test-await-maven-artifact
         uses: ./.github/actions/await-maven-artifact
         with:
-          who-to-greet: 'Mona the Octocat'
+          groupid: 'co.elastic.apm'
+          artifactid: 'apm-agent-java'
+          version: '1.42.0'
