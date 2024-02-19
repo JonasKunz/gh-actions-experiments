@@ -6,7 +6,7 @@ jobs:
     name: A job to say hello
     steps:
       - uses: actions/checkout@v4
-      - id: Test await maven ./.github/actions/await-maven-artifact
+      - id: test-await-maven-artifact
         uses: ./.github/actions/await-maven-artifact
         with:
           who-to-greet: 'Mona the Octocat'
