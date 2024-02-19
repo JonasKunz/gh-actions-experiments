@@ -8,6 +8,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Run goodbye.sh
-      run: goodbye.sh
+    - name: Wait for artifact to be available on maven central
       shell: bash
+      run: |
+        echo goodbye
