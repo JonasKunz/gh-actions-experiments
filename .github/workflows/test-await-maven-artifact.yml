@@ -10,5 +10,5 @@ jobs:
         uses: ./.github/actions/await-maven-artifact
         with:
           groupid: 'co.elastic.apm'
-          artifactid: 'apm-agent-java'
+          artifactid: 'elastic-apm-agent'
           version: '1.42.0'

@@ -19,6 +19,6 @@ runs:
         full_url="https://oss.sonatype.org/service/local/artifact/maven/redirect?r=releases&g=${{ inputs.groupid }}&a=${{ inputs.artifactid }}&v=${{ inputs.version }}"
         until curl -fs "${full_url}" > /dev/null
         do
-          echo "Artifacts not found on maven central. Sleeping 30 seconds, retrying afterwards"
+          echo "Artifact '${{ inputs.groupid }}:${{ inputs.artifactid }}:${{ inputs.version }}' not found on maven central. Sleeping 30 seconds, retrying afterwards"
           sleep 30s
         done
