@@ -11,4 +11,4 @@ jobs:
         with:
           groupid: 'co.elastic.apm'
           artifactid: 'elastic-apm-agent'
-          version: '1.42.0'
+          version: '1.50.0'
